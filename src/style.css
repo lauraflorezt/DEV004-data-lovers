@@ -1,0 +1,11 @@
+html {
+    background-image: url("imagenes/Fondo.jpg");/*imagen de fondo*/
+    background-repeat: no-repeat;/*fondo de repetición*/
+    background-attachment: fixed;/*accesorio de fondo*/
+    background-size: 100% 100%; /*tamaño de fondo*/
+}
+body {
+    margin: auto;
+    width: 640px; 
+    padding: 5px;
+}

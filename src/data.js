@@ -1,10 +1,8 @@
 // estas funciones son de ejemplo
 
-export const Data = () => {
+export const example = (data) => {
+  console.log(data);
 
-
-
-  return 'example';
 };
 
 

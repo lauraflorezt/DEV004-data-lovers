@@ -1,4 +1,7 @@
 import { example } from './data.js';
+
+
+
 // import data from './data/lol/lol.js';
 //import data from './data/pokemon/pokemon.js';
 //importo la data de rik y morty para trabajar
@@ -18,3 +21,4 @@ const ejemplo = data.results.forEach(elemento => {
 //se obtiene el elemento id y con inner se presenta en document el resultado
 document.getElementById("root").innerHTML= elementos;
 console.log(example, data);
+

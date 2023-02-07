@@ -1,14 +1,25 @@
+/* paleta de colores
+.color1 {color: #2b91c8;}
+.color2 {color: #53a6d1;}
+.color3 {color: #9ac1df;}
+.color4 {color: #c3d7e8;}
+.color5 {color: #e4ebed;}
+https://mybrandnewlogo.com/es/generador-de-paleta-de-colores
+*/
+.photo-container {
+	width: 100%;
+	display: grid;
+	place-content: center;
+	margin-bottom: 1%;
+  }
 
-html {
-    background-image: url("imagenes/Fondo.jpg");/*imagen de fondo*/
-    background-repeat: no-repeat;/*fondo de repetición*/
-    background-attachment: fixed;/*accesorio de fondo*/
-    background-size: 100% 100%; /*tamaño de fondo*/
-}
-body {
-    margin: auto;
-    width: 640px; 
-    padding: 3px;
+#img1 {
+	display: block;
+	width: 80%;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+  }
 
 * {
 	margin: 0;
@@ -17,11 +28,22 @@ body {
 }
 
 #root {
-	width: 90%;
-	max-width: 1000px;
-	margin: 40px auto 100px auto;
+	
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: 40px;
 
 }
+
+#image{
+	text-align: center;
+	background-color: #c3d7e8;
+	border-radius: 15px;
+}
+
+#photo{
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+

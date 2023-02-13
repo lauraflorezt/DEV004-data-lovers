@@ -1,23 +1,43 @@
-import { example } from './data.js';
-
+import { filterData, typeSpecies } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
-const mainGallery = characterGallery ();
-function characterGallery () {
-//declaro e inicializo elementos para ingresar nombre y foto personaje
-let elements="";
-// examino solo results que contiene a los personajes
-//templates en cada elemento de results que sea img y nombre
-data.results.forEach(element => {
-  elements = elements + `
+// data de interes
+const dataRM = data.results;
+//elementos DOM
+const prueba = document.getElementById("prueba");
+const episodes = document.getElementById("episodes");
+const species = document.getElementById("species");
+const mainGallery = document.getElementById("root");
+//Presentacion total personajes
+
+const cards = function characterGallery(data) {
+  
+  let elements = "";
+  data.forEach(element => {
+    elements = elements + `
   <div id="image">
   <img id="photo" src=${element.image}>
   <h1 id="tittle">${element.name}</h1>
   </div>
   `;
-});
-return elements;
+  });
+  return elements;
 }
-//se obtiene el elemento id y con inner se presenta en document el resultado
-document.getElementById("root").innerHTML= mainGallery;
-console.log(example, data);
+
+
+//filtro de personajes por especie
+species.addEventListener("change", function () {
+  
+  const specie = species.value;
+  const resultSpecie = filterData(dataRM, specie);
+
+  console.log("result", resultSpecie);
+  mainGallery.innerHTML = cards(resultSpecie);
+})
+
+//console.log(cards(resultSpecie))
+console.log(typeSpecies(dataRM));
+
+
+mainGallery.innerHTML = cards(dataRM);
+//console.log(example, data);
 

@@ -1,4 +1,4 @@
-// Filtro por episodios
+// Filtro por especies
 
 export const filterData = (data, value) => {
   const filterSpecies = data.filter(data => data.species == value);
@@ -11,11 +11,13 @@ export const typeSpecies =  (data) => {
   let kindSpecie = data.map(data=> data.species);
   return kindSpecie;
 }
-// export const example = episodeSeason (c, e);
-// // c = character , e = episode
-// function episodeSeason (c, e){
-//   return c.filter(c => c.episode == e)
-// }
+
+//filtro por episodios
+export const filterEpisode = (data, value) => {
+  const kindEpisode = data.filter(data => data.episode.includes(value));
+  //console.log(filterSpecies);
+  return kindEpisode;
+};
 
 
 

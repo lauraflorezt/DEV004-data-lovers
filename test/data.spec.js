@@ -1,18 +1,44 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterData,sortDataAZ } from '../src/data.js';
 
+const infData = [
+  {
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",}
 
-describe('example', () => {
+  ,{
+    "name": "Abadango Cluster Princess",
+    "status": "Alive",
+    "species": "Alien",
+    "type": "",
+    "gender": "Female",} 
+]
+
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterData).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+
+  it('return species Alien', () => {
+    expect(filterData("Alien", infData)).toBe('Alien');
   });
 });
 
 
-describe('anotherExample', () => {
+describe('sortDataAZ', () => {
+  it('is a function', () => {
+    expect(typeof sortDataAZ).toBe('function');
+  });
+
+  it('debería ordenar "abcdefghi"', () => {
+    expect(sortDataAZ('abcdefghi')).toBe(true);
+  });
+})
+
+/*describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -20,4 +46,4 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+});*/

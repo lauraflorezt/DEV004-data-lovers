@@ -1,102 +1,197 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img
+          id="logo"
+          src="imagenes/Rick_and_Morty.svg (1).png"
+          alt="Logo Rick_and_Morty"
+        />
 
-<body>
-  <div class="container">
-    <div class="navbar">
-      <img id="logo" src="imagenes/Rick_and_Morty.svg (1).png" alt="Logo Rick_and_Morty" />
-      <ul>
-        <li>Pagina Principal</li>
-        
-      </ul>
+        <ul>
+          <button id="recargar">Pagina Principal</button>
+          <button id="orden">Ordenar A-Z</button>
+        </ul>
+      </div>
+
+      <br />
+      <div class="filter-elements">
+        <h2 id="text-filtros">Filtros</h2>
+        <br />
+        <form>
+          <p>
+            <select id="episodes" class="select-css">
+              <option disabled selected value>Episodio...</option>
+              <option value="https://rickandmortyapi.com/api/episode/1">
+                Episodio 1
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/2">
+                Episodio 2
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/3">
+                Episodio 3
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/4">
+                Episodio 4
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/5">
+                Episodio 5
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/6">
+                Episodio 6
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/7">
+                Episodio 7
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/8">
+                Episodio 8
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/9">
+                Episodio 9
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/10">
+                Episodio 10
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/11">
+                Episodio 11
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/12">
+                Episodio 12
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/13">
+                Episodio 13
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/14">
+                Episodio 14
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/15">
+                Episodio 15
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/16">
+                Episodio 16
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/17">
+                Episodio 17
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/18">
+                Episodio 18
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/19">
+                Episodio 19
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/20">
+                Episodio 20
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/21">
+                Episodio 21
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/22">
+                Episodio 22
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/23">
+                Episodio 23
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/24">
+                Episodio 24
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/25">
+                Episodio 25
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/26">
+                Episodio 26
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/27">
+                Episodio 27
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/28">
+                Episodio 28
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/29">
+                Episodio 29
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/30">
+                Episodio 30
+              </option>
+              <option value="https://rickandmortyapi.com/api/episode/31">
+                Episodio 31
+              </option>
+            </select>
+          </p>
+        </form>
+
+        <br />
+
+        <form>
+          <p>
+            <select id="species" class="select-css">
+              <option disabled selected value>Especie...</option>
+              <option value="Human">Human</option>
+              <option value="Alien">Alien</option>
+              <option value="Humanoid">Humanoid</option>
+              <option value="Poopybutthole">Poopybutthole</option>
+              <option value="Mytholog">Mytholog</option>
+              <option value="unknown">Unknown</option>
+              <option value="Animal">Animal</option>
+              <option value="Disease">Disease</option>
+              <option value="Robot">Robot</option>
+              <option value="Cronenberg">Cronenberg</option>
+              <option value="Vampire">Vampire</option>
+              <option value="Parasite">Parasite</option>
+            </select>
+          </p>
+        </form>
+
+        <br>
+
+        <form>
+          <p>
+            <select id="status" class="select-css">
+              <option disabled selected value>Estado...</option>
+              <option value="Alive">Alive</option>
+              <option value="unknown">unknown</option>
+              <option value="Dead">Dead</option>
+            </select>
+          </p>
+        </form> 
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <button id="bton-calcular">calcular</button>
+            <th>Episodios</th>
+            <th>Cantidad de personajes</th> 
+          </tr>
+        </thead>
+        <tr>
+          <td>Episodio 1</td>     
+          <td></td>  
+        </tr>
+        <tr>
+          <td>Episodio 2</td>
+          <td></td>  
+        </tr>
+      </table>
+
+      <br />
+      <div id="prueba"></div>
+      <div id="root"></div>
     </div>
-    
-  
-  <br>
-  <div class="filter-elements">
-    <h2 id="text-filtros">Filtros</h2>
-    <br>
-    <form>
-      <p>
 
-        <select id="episodes" class="select-css">
-          <option disabled selected value>Episodio...</option>
-          <option value="https://rickandmortyapi.com/api/episode/1">Episodio 1</option>
-          <option value="https://rickandmortyapi.com/api/episode/2">Episodio 2</option>
-          <option value="https://rickandmortyapi.com/api/episode/3">Episodio 3</option>
-          <option value="https://rickandmortyapi.com/api/episode/4">Episodio 4</option>
-          <option value="https://rickandmortyapi.com/api/episode/5">Episodio 5</option>
-          <option value="https://rickandmortyapi.com/api/episode/6">Episodio 6</option>
-          <option value="https://rickandmortyapi.com/api/episode/7">Episodio 7</option>
-          <option value="https://rickandmortyapi.com/api/episode/8">Episodio 8</option>
-          <option value="https://rickandmortyapi.com/api/episode/9">Episodio 9</option>
-          <option value="https://rickandmortyapi.com/api/episode/10">Episodio 10</option>
-          <option value="https://rickandmortyapi.com/api/episode/11">Episodio 11</option>
-          <option value="https://rickandmortyapi.com/api/episode/12">Episodio 12</option>
-          <option value="https://rickandmortyapi.com/api/episode/13">Episodio 13</option>
-          <option value="https://rickandmortyapi.com/api/episode/14">Episodio 14</option>
-          <option value="https://rickandmortyapi.com/api/episode/15">Episodio 15</option>
-          <option value="https://rickandmortyapi.com/api/episode/16">Episodio 16</option>
-          <option value="https://rickandmortyapi.com/api/episode/17">Episodio 17</option>
-          <option value="https://rickandmortyapi.com/api/episode/18">Episodio 18</option>
-          <option value="https://rickandmortyapi.com/api/episode/19">Episodio 19</option>
-          <option value="https://rickandmortyapi.com/api/episode/20">Episodio 20</option>
-          <option value="https://rickandmortyapi.com/api/episode/21">Episodio 21</option>
-          <option value="https://rickandmortyapi.com/api/episode/22">Episodio 22</option>
-          <option value="https://rickandmortyapi.com/api/episode/23">Episodio 23</option>
-          <option value="https://rickandmortyapi.com/api/episode/24">Episodio 24</option>
-          <option value="https://rickandmortyapi.com/api/episode/25">Episodio 25</option>
-          <option value="https://rickandmortyapi.com/api/episode/26">Episodio 26</option>
-          <option value="https://rickandmortyapi.com/api/episode/27">Episodio 27</option>
-          <option value="https://rickandmortyapi.com/api/episode/28">Episodio 28</option>
-          <option value="https://rickandmortyapi.com/api/episode/29">Episodio 29</option>
-          <option value="https://rickandmortyapi.com/api/episode/30">Episodio 30</option>
-          <option value="https://rickandmortyapi.com/api/episode/31">Episodio 31</option>
-        </select>
-      </p>
-
-    </form>
-
-    <br>
-
-    <form>
-      <p>
-
-        <select id="species" class="select-css">
-          <option disabled selected value>Especie...</option>
-          <option value="Human">Human</option>
-          <option value="Alien">Alien</option>
-          <option value="Humanoid">Humanoid</option>
-          <option value="Poopybutthole">Poopybutthole</option>
-          <option value="Mytholog">Mytholog</option>
-          <option value="unknown">Unknown</option>
-          <option value="Animal">Animal</option>
-          <option value="Disease">Disease</option>
-          <option value="Robot">Robot</option>
-          <option value="Cronenberg">Cronenberg</option>
-          <option value="Vampire">Vampire</option>
-          <option value="Parasite">Parasite</option>
-        </select>
-      </p>
-
-    </form>
-  </div>
-  <br>
-  <div id="prueba"></div>
-  <div id="root"></div>
-</div>
-
-  <script src="main.js" type="module"></script>
-</body>
-
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

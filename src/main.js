@@ -61,6 +61,11 @@ status.addEventListener("change", function () {
 //console.log(cards(resultStatus))
 console.log(typeStatus(dataRM));
 
+//Concatenar filtros
+const concatenar= resultEpisode.concat(resultSpecie, resultStatus)
+mainGallery.innerHTML = cards(concatenar);
+
+
 //Ordenas tarjetas de la A-Z
 const ordenar = document.getElementById("orden");
 ordenar.addEventListener("click", function () {

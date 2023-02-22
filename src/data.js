@@ -34,6 +34,7 @@ export const filterEpisode = (data, value) => {
 //Ordena de la A-Z
 export const sortDataAZ = (data) => {
   data.sort((a, b) => {
+    
     if (a.name < b.name) {
       return -1;
     }

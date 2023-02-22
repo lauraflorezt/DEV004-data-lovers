@@ -18,9 +18,11 @@ const cards = function characterGallery(data) {
     elements = elements + `
   <div id="image">
   <div id="card">
-  <img id="photo" src=${element.image}>
   <h1 id="tittle">${element.name}</h1>
-  <p>Gender: ${element.gender}</p>
+  <img id="photo" src=${element.image}>  
+  <p><b>Gender:</b> ${element.gender}</p>
+  <p><b>Origin:</b> ${element.origin.name}</p>
+  <p><b>Location:</b> ${element.location.name}</p>
   </div>
   </div>
   `;

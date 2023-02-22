@@ -1,4 +1,4 @@
-import { filterData, typeSpecies, filterEpisode, sortDataAZ,filterStatus,typeStatus  } from './data.js';
+import { filterData, filterEpisode, sortDataAZ,filterStatus,  } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 // data de interes
@@ -39,7 +39,7 @@ species.addEventListener("change", function () {
 })
 
 //console.log(cards(resultSpecie));
-console.log(typeSpecies(dataRM));
+//console.log(typeSpecies(dataRM));
 
 mainGallery.innerHTML = cards(dataRM);
 
@@ -61,7 +61,7 @@ status.addEventListener("change", function () {
 })
 
 //console.log(cards(resultStatus))
-console.log(typeStatus(dataRM));
+//console.log(typeStatus(dataRM));
 
 //Ordenas tarjetas de la A-Z
 const ordenar = document.getElementById("orden");

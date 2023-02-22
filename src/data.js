@@ -6,10 +6,10 @@ export const filterData = (data, value) => {
 };
 
 //Para conocer todos los tipos de especies
-export const typeSpecies =  (data) => {
+/*export const typeSpecies =  (data) => {
   const kindSpecie = data.map(data=> data.species);
   return kindSpecie;
-}
+}*/
 
 //filtro por Estado
 export const filterStatus = (data, value) =>{
@@ -18,11 +18,11 @@ export const filterStatus = (data, value) =>{
 }
 
 //Para conocer todos los tipos de Estado
-export const typeStatus =  (data) => {
+/*export const typeStatus =  (data) => {
   const dataStatus = data.map(data=> data.status);
-  console.log(typeStatus)
+  //console.log(typeStatus)
   return dataStatus;
-}
+}*/
 
 //filtro por episodios
 export const filterEpisode = (data, value) => {
@@ -36,12 +36,12 @@ export const sortDataAZ = (data) => {
   data.sort((a, b) => {
     
     if (a.name < b.name) {
-      return -1;
+      return -1; //Intercambia
     }
     if (a.name > b.name) {
-      return 1;
+      return 1; //Esta bien el orden
     }
-    return 0;
+    return 0; // no intercambiar, esta bien el orden 
   });
   
   return data;

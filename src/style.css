@@ -19,7 +19,6 @@ body{
 
 .container{
 	background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(imagenes/Fondo.jpg);
-	
 }
 .navbar {
 	background-color: #1E2838;
@@ -38,11 +37,19 @@ body{
 	width: 20%;	
 	margin: 0 1.25rem;
 }
-
-.navbar ul li{
+.navbar ul button{
+	display: inline-flex;
 	list-style: none;
 	margin: 0 1.25rem;
 	font-size: 1.2rem;
+	cursor: pointer;
+	background-color: #1E2838;
+	color: #e4ebed;
+	border: none;
+}
+
+.navbar ul button:hover{
+   color: #3e70b1;
 }
 
 #root {
@@ -103,3 +110,12 @@ body{
 	border-color: #888;
 }
 
+/*table, th, td {
+	border: 1px solid rgb(243, 242, 242);
+    border-collapse: collapse;
+	color: #ece5e5;
+}
+th, td {
+	border-color: #e4eaf3;
+  }*/
+ 

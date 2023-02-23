@@ -5,17 +5,17 @@ describe('sortDataAZ', () => {
     expect(typeof sortDataAZ).toBe('function'); //compara valores primitivos
   });
 
-  it('returns `1`', () => {
+  it('returns `1` si esta bien el orden', () => {
     expect(sortDataAZ([
-      {"name":"a"},{"name":"b"}])).toStrictEqual([{"name":"a"},{"name":"b"}]);//toStrictEqual Prueba misma estructura y tipo de lo objetos
+      {"name":"a"},{"name":"b"}])).toStrictEqual([{"name":"a"},{"name":"b"}]);//toStrictEqual Prueba misma estructura y tipo de los objetos
   });
 
-  it('returns `-1`', () => {
+  it('returns `-1` si debe intercambiar el orden', () => {
     expect(sortDataAZ([
       {"name":"c"},{"name":"a"}])).toEqual([{"name":"a"},{"name":"c"}]);//toEqual compara propiedades de objetos
   });
 
-  it('returns `0`', () => {
+  it('returns `0` si es igual los nombres ', () => {
     expect(sortDataAZ([
       {"name":"a"},{"name":"a"}])).toStrictEqual([{"name":"a"},{"name":"a"}]); 
   });
@@ -61,14 +61,14 @@ describe('filterData', () => {
 
 
   it('returns `filterSpecies`', () => {
-    expect(filterData(infData)).toEqual[
+    expect(filterData(infData, 'Human')).toEqual(
       {
         "species": "Human",
       }
       ,{
         "species": "Alien",
       } 
-    ]
+    )
   });
 });
 
@@ -77,14 +77,14 @@ describe('filterEpisode', () => {
     expect(typeof filterEpisode).toBe('function'); 
   });
   it('returns `kindEpisode`', () => {
-    expect(filterEpisode(infData)).toEqual[
+    expect(filterEpisode(infData)).toEqual(
       {
         "name": "Rick Sanchez",
       }
       ,{
         "name": "Abadango Cluster Princess",
       } 
-    ]
+    )
   });
 });
 
@@ -93,12 +93,12 @@ describe('filterStatus', () => {
     expect(typeof filterStatus).toBe('function');
   });
   it('returns `kindStatus`', () => {
-    expect(filterStatus(infData)).toEqual[
+    expect(filterStatus(infData)).toEqual(
       {
         "status": "Alive",
       }
       
-    ]
+    )
   });
 });
 

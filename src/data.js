@@ -5,14 +5,30 @@ export const filterData = (data, value) => {
   return filterSpecies;
 };
 
-//Para conocer todos los tipos de especies
-/*export const typeSpecies =  (data) => {
-  const kindSpecie = data.map(data=> data.species);
-  return kindSpecie;
+//Para conocer todos los tipos de genero aux calculo
+export const mapGender = (data) => {
+  return data.map(data => data.gender);
+
+}
+
+//preguntar porque no funciona
+/*export const suma = (data) => {
+  let sumaData = [];
+  let contador = 1;
+  let nombreData = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] === data[i + 1]) {      
+      contador++;
+    } else {
+      nombreData.push(data[i]);
+      sumaData.push(contador);
+      contador = 1;
+    }
+  }
 }*/
 
 //filtro por Estado
-export const filterStatus = (data, value) =>{
+export const filterStatus = (data, value) => {
   const kindStatus = data.filter(data => data.status === value);
   return kindStatus;
 }
@@ -34,7 +50,7 @@ export const filterEpisode = (data, value) => {
 //Ordena de la A-Z
 export const sortDataAZ = (data) => {
   data.sort((a, b) => {
-    
+
     if (a.name < b.name) {
       return -1; //Intercambia
     }
@@ -43,12 +59,6 @@ export const sortDataAZ = (data) => {
     }
     return 0; // no intercambiar, esta bien el orden 
   });
-  
+
   return data;
 }
-
-// Calcular estadisticas
-//export const computeStats = (data)  => {
- 
-
- 

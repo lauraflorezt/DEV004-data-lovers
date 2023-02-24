@@ -10,7 +10,7 @@ https://mybrandnewlogo.com/es/generador-de-paleta-de-colores
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 body{
@@ -35,7 +35,7 @@ body{
 
 #logo {
 	display: flex;
-	width: 20%;	
+	width: 150px;	
 	margin: 0 1.25rem;
 }
 
@@ -54,7 +54,7 @@ body{
    color: #3e70b1;
 }
 
-#root {
+#root, #principalTable {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -96,10 +96,10 @@ body{
 
 .select-css {
 	display: inline;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	color: #444;
-	line-height: 1.3;
+	line-height: 1.5;
 	padding: 0.4em 1.4em 0.3em 0.8em;
 	width: 50%;
 	max-width: 100%;
@@ -115,12 +115,25 @@ body{
 	border-color: #888;
 }
 
-/*table, th, td {
-	border: 1px solid rgb(243, 242, 242);
-    border-collapse: collapse;
-	color: #ece5e5;
+#principalTable{
+	text-align: center;
+	vertical-align: middle;
 }
-th, td {
-	border-color: #e4eaf3;
-  }*/
- 
+
+#secondary{
+	background: #aaa;
+}
+
+table {
+	width: 50%;
+	border: 1px solid #000;
+ }
+
+ th, td {
+	width: 25%;
+	border: 1px solid #000;
+ }
+
+ caption{
+	color: #e4ebed;
+ }

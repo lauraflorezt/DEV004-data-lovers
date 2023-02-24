@@ -1,4 +1,4 @@
-import {  sortDataAZ, filterStatus, filterEpisode } from '../src/data.js'; //volver a colocar filterData,
+import {  sortDataAZ, filterStatus, filterEpisode,filterData } from '../src/data.js'; //volver a colocar filterData,
 
 describe('sortDataAZ', () => {
   const dataPrueba = [
@@ -42,25 +42,27 @@ describe('sortDataAZ', () => {
   });
 });
 
-/*describe('filterData', () => {
+describe('filterData', () => {
+  const dataPrueba = [
 
+    { "species": "Human", },
+
+    { "species": "Alien" },
+
+    { "species": "Humanoid" },
+  ]
   it('is a function', () => {
     expect(typeof filterData).toBe('function');
   });
 
-
-  it('returns `filterSpecies`', () => {
+  it('retorna Human si esta dentro del array de objetos', () => {
     
-    expect(filterData(infData, 'Human')).toEqual(
-      {
-        "species": "Human",
-      }
-      , {
-        "species": "Alien",
-      }
-    )
+    expect(filterData(dataPrueba,"Human")).toEqual([{"species": "Human"}]);
   });
-});*/
+});
+
+
+
 
 describe('filterEpisode', () => {
   const dataPrueba = [

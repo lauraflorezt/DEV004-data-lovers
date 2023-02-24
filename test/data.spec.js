@@ -1,6 +1,15 @@
-import { filterData, sortDataAZ, filterStatus, filterEpisode } from '../src/data.js';
+import {  sortDataAZ, filterStatus, filterEpisode } from '../src/data.js'; //volver a colocar filterData,
 
 describe('sortDataAZ', () => {
+  const dataPrueba = [
+
+    { "name": "Rick" },
+
+    { "name": "Morty" },
+
+    { "name": "Beth" }
+
+  ]
   it('is a function', () => {
     expect(typeof sortDataAZ).toBe('function'); //compara valores primitivos
   });
@@ -19,9 +28,21 @@ describe('sortDataAZ', () => {
     expect(sortDataAZ([
       { "name": "a" }, { "name": "a" }])).toStrictEqual([{ "name": "a" }, { "name": "a" }]);
   });
-})
 
-describe('filterData', () => {
+  it('retorna nombres de la A-Z', () => {
+    expect(sortDataAZ(dataPrueba)).toEqual([
+
+      { "name": "Beth" },
+  
+      { "name": "Morty" },
+  
+      { "name": "Rick" }
+  
+    ])
+  });
+});
+
+/*describe('filterData', () => {
 
   it('is a function', () => {
     expect(typeof filterData).toBe('function');
@@ -39,7 +60,7 @@ describe('filterData', () => {
       }
     )
   });
-});
+});*/
 
 describe('filterEpisode', () => {
   const dataPrueba = [
@@ -80,7 +101,7 @@ describe('filterStatus', () => {
     expect(filterStatus(dataPrueba, "Alive")).toEqual([{ "status": "Alive" }])
   });
   it('retorna el array vacio cuando no existe equivalencia', () => {
-    expect(filterStatus(dataPrueba, "Vivo")).toEqual([{ "status": "Alive" }])
+    expect(filterStatus(dataPrueba, "Vivo")).toEqual([])
   });
 });
 

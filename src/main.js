@@ -1,4 +1,4 @@
-import { filterData, filterEpisode, sortDataAZ,filterStatus,  } from './data.js';
+import { filterData, filterEpisode, sortDataAZ,filterStatus, obtenerTopDiezUbicacion,typelocation } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 // data de interes
@@ -10,6 +10,7 @@ const episodes = document.getElementById("episodes");
 const species = document.getElementById("species");
 const mainGallery = document.getElementById("root");
 const status = document.getElementById("status")
+const topDiez = document.getElementById("TopDiezUbicacion")
 
 //Presentacion total personajes
 const cards = function characterGallery(data) {
@@ -76,3 +77,42 @@ const recargar = document.getElementById('recargar');
 recargar.addEventListener('click', function () {
   location.reload();
 })
+
+//Presentacion estadistica tabla
+/*const tableBody =document.getElementById(tableBody)
+const table = function charactertable(data)  {
+  let elements = "";
+  data.forEach(element => {
+    elements = elements + `
+  <tr>
+  <td>${element.name}</td> 
+  <td> ${element.gender}</td>
+  <td> ${element.origin.name}</td>
+  <td> ${element.location.name}</td>
+  <tr>
+  `;
+tableBody.innerHtml = table(data);
+  });
+  
+}*/ 
+
+topDiez.addEventListener("click", () => {
+  /*const table = function charactertable(data)  {
+    `<table class="principal">
+<thead>
+      <tr>
+    <th>female</th> 
+    <th>male</th>
+    <th>genderless</th> 
+    <th>unknown</th> 
+  </tr>
+</thead>`
+  
+  }*/
+  const obtenerTopDiez = obtenerTopDiezUbicacion(dataRM);
+  mainGallery.innerHTML = cards(obtenerTopDiez);
+
+
+}
+);
+console.log(typelocation(dataRM));

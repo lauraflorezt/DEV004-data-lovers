@@ -47,8 +47,31 @@ export const sortDataAZ = (data) => {
   return data;
 }
 
-// Calcular estadisticas
-//export const computeStats = (data)  => {
- 
 
+
+//FUNCION CALCULO 
+
+/*export const compute = (data) => {
+  const personajesG = data.results
+  const gender = personajesG.filter(element => element.death)
+  return gender.length * 100 / 493
+}*/
+//Esta función se encarga de mostrar el TOP 10 por ubicación
+export const typelocation =  (data) => {
+  const datalocations = data.map(data=> data.location.name);
  
+  return datalocations;
+}
+
+export const obtenerTopDiezUbicacion = (todaslasUbicaciones) => {
+  return todaslasUbicaciones.sort(function (a, b) {
+    if (a.species > b.species) {
+      return 1;
+    }
+    if (a.species < b.species) {
+      return -1;
+    }
+    return 0;
+
+  }).slice(0, 5);
+};

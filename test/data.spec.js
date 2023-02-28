@@ -1,4 +1,4 @@
-import {  sortDataAZ, filterStatus, filterEpisode,filterData } from '../src/data.js'; //volver a colocar filterData,
+import {  sortDataAZ, filterStatus, filterEpisode,filterData, mapGender, suma } from '../src/data.js'; 
 
 describe('sortDataAZ', () => {
   const dataPrueba = [
@@ -107,6 +107,32 @@ describe('filterStatus', () => {
   });
 });
 
+describe('mapGender', () => {
+  const dataPrueba = [
 
+    { "gender": "Female" },
 
+    { "gender": "Male"},
 
+    { "gender": "unknown" }
+
+  ] 
+  it('is a function', () => {
+    expect(typeof mapGender).toBe('function');
+  });
+  it('retorna el array que contiene los elementos de gender', () => {
+    expect(mapGender(dataPrueba, "Male")).toEqual(["Female", "Male", "unknown"])
+  });
+});
+
+describe('suma', () => {
+  const dataPrueba = [
+    "Female", "Female", "Female", "Female", "Male", "Male", "unknown"
+  ]
+  it('is a function', () => {
+    expect(typeof suma).toBe('function');
+  });
+  it('retorna arrays nombreData y sumaData', () => {
+    expect(suma(dataPrueba)).toEqual({"nombreData":["Female", "Male", "unknown"], "sumaData":[4, 2, 1]})
+  });
+});

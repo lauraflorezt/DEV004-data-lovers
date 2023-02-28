@@ -1,4 +1,4 @@
-import {  sortDataAZ, filterStatus, filterEpisode,filterData, mapGender, suma } from '../src/data.js'; 
+import {  sortDataAZ, filterStatus, filterEpisode,filterData, mapGender, suma, mapStatus, mapSpecies } from '../src/data.js'; 
 
 describe('sortDataAZ', () => {
   const dataPrueba = [
@@ -80,7 +80,7 @@ describe('filterEpisode', () => {
   it('is a function', () => {
     expect(typeof filterEpisode).toBe('function');
   });
-  it('returna solo episodio 1', () => {
+  it('retorna solo episodio 1', () => {
     expect(episodePrueba).toEqual([{"episode": "episode/1"},{"episode": "episode/1"}] 
     )
   });
@@ -134,5 +134,35 @@ describe('suma', () => {
   });
   it('retorna arrays nombreData y sumaData', () => {
     expect(suma(dataPrueba)).toEqual({"nombreData":["Female", "Male", "unknown"], "sumaData":[4, 2, 1]})
+  });
+});
+
+describe('mapStatus', () => {
+  const dataPrueba = [
+
+    { "status": "Alive" },
+
+    { "status": "unknown"},
+
+    { "status": "Dead" }
+
+  ];
+  it('retorna el array que contiene los elementos de Status', () => {
+    expect(mapStatus(dataPrueba, "Dead")).toEqual(["Alive", "unknown", "Dead"])
+  });
+});
+
+describe('mapSpecies', () => {
+  const dataPrueba = [
+
+    { "species": "Human" },
+
+    { "species": "Humanoid"},
+
+    { "species": "Animal" }
+
+  ];
+  it('retorna el array que contiene los elementos de Species', () => {
+    expect(mapSpecies(dataPrueba, "Human")).toEqual(["Human", "Humanoid", "Animal"])
   });
 });

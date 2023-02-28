@@ -142,13 +142,13 @@ estadistica.addEventListener('click', function () {
   <br>
   `
 
-   //se ordena los datos mapeados 
-   const arraySpecies = mapSpecies(copiadata).sort();   
-   //guardamos la suma de cada elemento repetido y nombre elemento
-   const sumaSp = suma(arraySpecies);
-   //console.log(sumaSp);
-   //Presentacion estadisticas tabla genero
-   const tableC = `
+  //se ordena los datos mapeados 
+  const arraySpecies = mapSpecies(copiadata).sort();   
+  //guardamos la suma de cada elemento repetido y nombre elemento
+  const sumaSp = suma(arraySpecies);
+  //console.log(sumaSp);
+  //Presentacion estadisticas tabla genero
+  const tableC = `
    <div id="principalTable">
    <table id="secondary">
    <caption>Number of Characters by Species</caption>

@@ -86,7 +86,8 @@ body{
 }
 
 .filter-elements {
-	
+	display: flex;
+	flex-flow: column wrap;
 	text-align: center;
 }
 
@@ -101,7 +102,7 @@ body{
 	color: #444;
 	line-height: 1.5;
 	padding: 0.4em 1.4em 0.3em 0.8em;
-	width: 50%;
+	width: 30%;
 	max-width: 100%;
 	box-sizing: border-box;
 	margin: 0;

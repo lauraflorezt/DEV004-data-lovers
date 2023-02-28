@@ -8,14 +8,22 @@ export const filterData = (data, value) => {
 //Para conocer todos los tipos de genero aux calculo
 export const mapGender = (data) => {
   return data.map(data => data.gender);
-
 }
 
-//preguntar porque no funciona
-/*export const suma = (data) => {
-  let sumaData = [];
+//Para conocer todos los tipos de status aux calculo
+export const mapStatus = (data) => {
+  return data.map(data => data.status);
+}
+
+//Para conocer todos los tipos de species aux calculo
+export const mapSpecies = (data) => {
+  return data.map(data => data.species);
+}
+//Devuelve suma de cada elemento repetido y nombre elemento
+export const suma = (data) => {
+  const sumaData = [];
   let contador = 1;
-  let nombreData = [];
+  const nombreData = [];
   for (let i = 0; i < data.length; i++) {
     if (data[i] === data[i + 1]) {      
       contador++;
@@ -25,20 +33,14 @@ export const mapGender = (data) => {
       contador = 1;
     }
   }
-}*/
+  return {sumaData, nombreData};
+}
 
 //filtro por Estado
 export const filterStatus = (data, value) => {
   const kindStatus = data.filter(data => data.status === value);
   return kindStatus;
 }
-
-//Para conocer todos los tipos de Estado
-/*export const typeStatus =  (data) => {
-  const dataStatus = data.map(data=> data.status);
-  //console.log(typeStatus)
-  return dataStatus;
-}*/
 
 //filtro por episodios
 export const filterEpisode = (data, value) => {

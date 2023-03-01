@@ -21,7 +21,7 @@ body{
 	background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(imagenes/Fondo.jpg);
 	
 }
-.navbar {
+.navbar  {
 	background-color: #1E2838;
 	width: 100%;
 	margin: auto;
@@ -31,15 +31,16 @@ body{
 	justify-content: space-between;
 	flex-flow: wrap;
 	color: #e4ebed;
+	
 }
 
 #logo {
 	display: flex;
-	width: 150px;	
+	width: 250px;	
 	margin: 0 1.25rem;
 }
 
-.navbar ul button{
+.navbar ul button {
 	display:inline-flex;
 	list-style: none;
 	margin: 0 1.25rem;
@@ -138,3 +139,5 @@ table {
  caption{
 	color: #e4ebed;
  }
+
+ 

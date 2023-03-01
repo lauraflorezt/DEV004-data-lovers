@@ -1,0 +1,162 @@
+/* paleta de colores
+.color1 {color: #2b91c8;}
+.color2 {color: #53a6d1;}
+.color3 {color: #9ac1df;}
+.color4 {color: #c3d7e8;}
+.color5 {color: #e4ebed;}
+https://mybrandnewlogo.com/es/generador-de-paleta-de-colores
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+body{
+	font-family: 'Abel', sans-serif;
+}
+
+.container{
+	background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(imagenes/Fondo.jpg);
+	
+}
+.navbar  {
+	background-color: #1E2838;
+	width: 100%;
+	margin: auto;
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: wrap;
+	color: #e4ebed;
+	
+}
+
+#logo {
+	display: flex;
+	width: 250px;	
+	margin: 0 1.25rem;
+}
+
+.navbar ul button {
+	display:inline-flex;
+	list-style: none;
+	margin: 0 1.25rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	background-color: #1E2838;
+	color: #e4ebed;
+	border: none;
+}
+
+.navbar ul button:hover{
+   color: #3e70b1;
+}
+
+#root, #principalTable {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+}
+#tittle{
+	font-size: 28px;
+}
+
+#image {
+	background-color: #c3d7e8;
+	border-radius: 0.625rem;
+}
+
+#card {
+	text-align: center;
+	background-color: #e4ebed;
+	border-radius: 1rem;
+	border: 1px solid #2b91c8;
+	margin: 0% 10%;
+	min-width: 200px;
+}
+
+#photo {
+	border-radius: 1rem;
+	margin-bottom: 0.625rem;
+	width: 100%;
+	height: auto;
+}
+
+.filter-elements {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+}
+
+#text-filtros{
+	color: #e4ebed;
+}
+
+.select-css {
+	display: inline;
+	font-size: 15px;
+	font-weight: 400;
+	color: #444;
+	line-height: 1.5;
+	padding: 0.4em 1.4em 0.3em 0.8em;
+	width: 30%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .03);
+	border-radius: .3em;
+	cursor: pointer;
+}
+
+.select-css:hover {
+	border-color: #888;
+}
+
+#principalTable{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#secondary{
+	background: #aaa;
+}
+
+table {
+	width: 50%;
+	border: 1px solid #000;
+ }
+
+ th, td {
+	width: 25%;
+	border: 1px solid #000;
+ }
+
+ caption{
+	color: #e4ebed;
+ }
+
+ footer {
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1E2838;
+    color: #e4ebed;
+    font-size: 1.9rem;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    
+}
+
+.autoras {
+    font-family:'Abel', sans-serif; 
+    position: center;
+    text-align: center;
+    align-content: center;
+}

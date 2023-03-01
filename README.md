@@ -21,7 +21,7 @@
 
 ## 1. Definicion del producto
 
-Esta página web le permitirá a los fans de Rick y Morty, conocer datos de sus personajes favoritos, logrando visualizar el total de personajes de la serie hasta el episodio 31, cada uno presentado en una tarjeta con su nombre, imagen, origen y ubicación , puedes filtrarlos por episodios, género y especies, ordenarlos de forma ascendente por el nombre con la opción sort A-Z, encontrar información sobre la cantidad de personajes que hay por tipo de género, especies y estado mostrados en tablas con la opción stats y resetear la página con la opción reset .
+Esta página web le permitirá a los fans de Rick y Morty, conocer datos de sus personajes favoritos, logrando visualizar el total de personajes de la serie hasta el episodio 31, cada uno presentado en una tarjeta con su nombre, imagen, origen y ubicación , puedes filtrarlos por episodios, género y especies, ordenarlos de forma ascendente por el nombre con la opción sort A-Z, encontrar información sobre la cantidad de personajes que hay por tipo de género, especies y estado mostrados en tablas con la opción stats y resetear la página con la opción reset, por último en el footer incluimos los nombres de quienes desarrollaron el proyecto.
 
 ## 2. Historias de usuario
 

@@ -32,7 +32,8 @@ En este proyecto utilizamos la data de
   - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
   Esto nos permitió tener un primer acercamiento de lo que querian nuestros usuarios de la página.
   
-![Historias de usuario Figma](https://user-images.githubusercontent.com/121992038/221998543-864748b7-92ab-460d-a590-37f3e54eae39.JPG)
+  ![Historias de usuario Figma](https://user-images.githubusercontent.com/121992038/221998543-864748b7-92ab-460d-a590-37f3e54eae39.JPG)
+
 
 
 ## 3. Prototipo de baja fidelidad
@@ -61,6 +62,7 @@ Realizamos pruebas de usabilidad con compañeras y usuarios en los cuales obtuvi
 * los elementos mas comunes como los filtros accesos directos a reset, sort a-z y stats se pueden encontrar fácilmente por el usuario.
 * En la parte de stats podría quitarse los filtros, ya que puede darse a entender que se pueden usar para los resultados de la tabla que está en la parte de abajo.
 * Se sugiere que el titulo de RICK AND MORTY sea mas vsible ya que no es entendible.
+* Nos sugerieron organizar el tamaño de los filtros para que no se vieran tan grandes.
 
 ## 6. Diseño final de proyecto
 

@@ -80,7 +80,8 @@ recargar.addEventListener('click', function () {
 
 //Presentar tabla estadistica
 const estadistica = document.getElementById('stats');
-estadistica.addEventListener('click', function () {
+estadistica.addEventListener('click', tablas); 
+function tablas (e) {
   //se ordena los datos mapeados 
   const arrayMap = mapGender(copiadata).sort();
   //guardamos la suma de cada elemento repetido y nombre elemento
@@ -215,4 +216,13 @@ estadistica.addEventListener('click', function () {
    `
   prueba.innerHTML = tableA + tableB + tableC;
   mainGallery.innerHTML = "";
-});
+  e.target.removeEventListener(e.type, tablas);
+  const oculto = document.querySelector(".filter-elements");
+  if (oculto.style.display === "none") {
+    oculto.style.display = "block";
+} else {
+    oculto.style.display = "none";
+    
+}
+
+};

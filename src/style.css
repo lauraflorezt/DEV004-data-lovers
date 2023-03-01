@@ -140,4 +140,23 @@ table {
 	color: #e4ebed;
  }
 
- 
+ footer {
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1E2838;
+    color: #e4ebed;
+    font-size: 1.9rem;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    
+}
+
+.autoras {
+    font-family:'Abel', sans-serif; 
+    position: center;
+    text-align: center;
+    align-content: center;
+}

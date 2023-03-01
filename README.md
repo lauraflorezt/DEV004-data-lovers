@@ -63,14 +63,15 @@ Realizamos pruebas de usabilidad con compañeras y usuarios en los cuales obtuvi
 * En la parte de stats podría quitarse los filtros, ya que puede darse a entender que se pueden usar para los resultados de la tabla que está en la parte de abajo.
 * Se sugiere que el titulo de RICK AND MORTY sea mas vsible ya que no es entendible.
 * Nos sugerieron organizar el tamaño de los filtros para que no se vieran tan grandes.
+* Nos sugieren cambiar a un solo lenguaje.
+
 
 ## 6. Diseño final de proyecto
 
   ![PaginaWeb](https://user-images.githubusercontent.com/121992038/222002278-b45f7d8e-b769-4dc3-8971-6bd2b297ec10.JPG)
   ![Sort A-Z](https://user-images.githubusercontent.com/121992038/222018076-b321c9b0-0b75-4429-9e74-a2c0c748e9ee.jpg)
-  ![tablas](https://user-images.githubusercontent.com/121992038/222021635-65029ad6-d4d0-428d-93e5-1eef28fa3438.JPG)
-  ![Imagen10](https://user-images.githubusercontent.com/121992038/222022514-c3e72910-e0ee-4a9a-bd1e-965d24e1a662.png)   
-
+  ![tablas](https://user-images.githubusercontent.com/121992038/222209228-bbcd6662-9b12-47f4-856c-84369439fd7c.JPG)
+  ![Movil](https://user-images.githubusercontent.com/121992038/222208729-17c8ed9a-9198-4932-8ed6-829077431d62.png)
 
 
 IMPLEMENTACIÓN DE LA INTERFAZ DE USUARIO (HTML/CSS/JS)

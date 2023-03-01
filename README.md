@@ -66,6 +66,9 @@ Realizamos pruebas de usabilidad con compañeras y usuarios en los cuales obtuvi
 
   ![PaginaWeb](https://user-images.githubusercontent.com/121992038/222002278-b45f7d8e-b769-4dc3-8971-6bd2b297ec10.JPG)
   ![Sort A-Z](https://user-images.githubusercontent.com/121992038/222018076-b321c9b0-0b75-4429-9e74-a2c0c748e9ee.jpg)
+  ![tablas](https://user-images.githubusercontent.com/121992038/222021635-65029ad6-d4d0-428d-93e5-1eef28fa3438.JPG)
+  ![Imagen10](https://user-images.githubusercontent.com/121992038/222022514-c3e72910-e0ee-4a9a-bd1e-965d24e1a662.png)   
+
 
 
 IMPLEMENTACIÓN DE LA INTERFAZ DE USUARIO (HTML/CSS/JS)
